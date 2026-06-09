@@ -60,19 +60,23 @@ Write-Host "Skills: $skillInstalled new, $skillSkipped skipped ($(($skillInstall
 Write-Host ""
 Write-Host "--- Phase 2: Plugins ---" -ForegroundColor Cyan
 
+# Bundled plugins (Browser/Chrome/Computer Use) -> openai-bundled
 if (Test-Path $pluginsSrc) {
+    $bundledNames = @("browser", "chrome", "computer-use")
     Get-ChildItem -Directory $pluginsSrc | ForEach-Object {
         $pn = $_.Name
+        $sourceType = if ($bundledNames -contains $pn) { "openai-bundled" } else { "openai-curated" }
+        $pluginDst = Join-Path $env:CODEX_HOME "plugins\cache\$sourceType"
         Get-ChildItem -Directory $_.FullName | ForEach-Object {
             $vn = $_.Name
-            $target = Join-Path $pluginsDst "$pn\$vn"
+            $target = Join-Path $pluginDst "$pn\$vn"
             if (-not (Test-Path $target)) {
                 New-Item -ItemType Directory -Force -Path $target | Out-Null
                 Copy-Item -Recurse -Force "$($_.FullName)\*" $target
             }
         }
     }
-    Write-Host "Plugins deployed"
+    Write-Host "Plugins deployed (bundled + curated)"
 }
 
 # ============================================================
