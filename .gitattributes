@@ -1,0 +1,7 @@
+﻿# Auto detect text files and perform LF normalization
+* text=auto
+
+# PowerShell scripts should use CRLF on Windows
+*.ps1 text eol=crlf
+*.md text eol=lf
+*.yaml text eol=lf
