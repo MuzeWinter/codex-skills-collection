@@ -1,0 +1,39 @@
+{
+    "name":  "computer-use",
+    "version":  "0.1.0-local",
+    "description":  "Local Windows Computer Use compatibility helper for Codex Desktop.",
+    "author":  {
+                   "name":  "Local"
+               },
+    "homepage":  "https://openai.com/",
+    "repository":  "https://openai.com/",
+    "license":  "Proprietary",
+    "keywords":  [
+                     "computer-use",
+                     "windows",
+                     "desktop"
+                 ],
+    "skills":  "./skills/",
+    "interface":  {
+                      "displayName":  "Computer Use",
+                      "shortDescription":  "Control this Windows desktop from Codex",
+                      "longDescription":  "Local compatibility plugin that provides the Windows helper paths expected by Codex Desktop Computer Use.",
+                      "developerName":  "Local",
+                      "category":  "Productivity",
+                      "capabilities":  [
+                                           "Interactive",
+                                           "Read",
+                                           "Write"
+                                       ],
+                      "websiteURL":  "https://openai.com/",
+                      "privacyPolicyURL":  "https://openai.com/policies/row-privacy-policy/",
+                      "termsOfServiceURL":  "https://openai.com/policies/row-terms-of-use/",
+                      "defaultPrompt":  [
+                                            "Look at my screen and help me navigate"
+                                        ],
+                      "brandColor":  "#10A37F",
+                      "screenshots":  [
+
+                                      ]
+                  }
+}

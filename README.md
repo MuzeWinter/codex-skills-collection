@@ -113,6 +113,18 @@ skill-installer --repo obra/superpowers --path skills/brainstorming --name brain
 
 ---
 
+## 包含的插件
+
+| 插件 | 版本 | 说明 |
+|------|------|------|
+| Browser | 26.602.30954 | 内置浏览器操控 |
+| Chrome | 26.602.30954 | Chrome 浏览器自动化 |
+| Computer Use | 26.602.30954 | Windows 桌面操控 |
+
+> setup.ps1 会自动部署到 CODEX_HOME/plugins/cache/
+
+---
+
 ## 插件依赖
 
 以下 Codex 插件需另行安装：
