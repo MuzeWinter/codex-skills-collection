@@ -115,13 +115,23 @@ skill-installer --repo obra/superpowers --path skills/brainstorming --name brain
 
 ## 包含的插件
 
-| 插件 | 版本 | 说明 |
+| 插件 | 来源 | 说明 |
 |------|------|------|
-| Browser | 26.602.30954 | 内置浏览器操控 |
-| Chrome | 26.602.30954 | Chrome 浏览器自动化 |
-| Computer Use | 26.602.30954 | Windows 桌面操控 |
+| Browser | Codex 内置 | 内置浏览器操控 |
+| Chrome | Codex 内置 | Chrome 浏览器自动化 |
+| Computer Use | [codex-windows-fast-patch](https://github.com/MuzeWinter/codex-windows-fast-patch-skill) | Windows 桌面操控 |
+| Figma | Codex 市场 | 设计稿转代码、组件库生成 |
+| GitHub | Codex 市场 | 仓库/PR/Issue 管理 |
+| Sentry | Codex 市场 | 线上报错监控 |
+| Supabase | Codex 市场 | 后端即服务 |
+| Neon Postgres | Codex 市场 | Serverless PostgreSQL |
 
-> setup.ps1 会自动部署到 CODEX_HOME/plugins/cache/
+> setup.ps1 自动部署  
+> Browser/Chrome 随 Codex 桌面端发布  
+> Computer Use 由 [codex-windows-fast-patch](https://github.com/MuzeWinter/codex-windows-fast-patch-skill) 启用  
+> 市场插件通过 Codex 内置市场分发
+> 内置插件随 Codex 桌面端发布，无独立 GitHub 仓库
+> 市场插件通过 Codex 内置市场分发，也无外部仓库地址
 
 ---
 
