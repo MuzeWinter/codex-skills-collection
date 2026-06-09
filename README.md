@@ -10,14 +10,14 @@
 
 ### Windows
 ```powershell
-git clone https://github.com/<你的用户名>/codex-skills-collection.git
+git clone https://github.com/Muze/codex-skills-collection.git
 cd codex-skills-collection
 .\setup.ps1
 ```
 
 ### macOS / Linux
 ```bash
-git clone https://github.com/<你的用户名>/codex-skills-collection.git
+git clone https://github.com/Muze/codex-skills-collection.git
 cd codex-skills-collection
 cp -r skills/* "$CODEX_HOME/skills/"
 ```
