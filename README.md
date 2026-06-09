@@ -2,7 +2,7 @@
 
 > 个人 Codex 技能全集，一键部署到任意电脑
 > 更新时间：2026-06-09
-> 技能总数：32 个 | 插件：3 个
+> 技能总数：35 个 | 插件：3 个
 
 ---
 
@@ -51,6 +51,13 @@ cp -r skills/* "$CODEX_HOME/skills/"
 |------|------|
 | ui-ux-pro-max | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) |
 | **product-design-resources** | [ttt30ga/awesome-product-design](https://github.com/ttt30ga/awesome-product-design) — 本地定制 |
+
+### 操控 & 自动化
+| 技能 | 来源 |
+|------|------|
+| **computer-use** | Codex Computer Use 插件内置 |
+| **control-in-app-browser** | Codex Browser 插件内置 |
+| **control-chrome** | Codex Chrome 插件内置 |
 
 ### 补充增强 — Matt Pocock
 | 技能 | 来源 |
